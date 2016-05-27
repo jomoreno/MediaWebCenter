@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainMasterPage.master.cs" Inherits="Pages_MainMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="../Styles/masterStyle.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <asp:ScriptManager ID="ScriptManager1" runat="server">
+         </asp:ScriptManager>
+         <%--<asp:UpdateProgress ID="UpdateProgress1" runat="server" AssociatedUpdatePanelID="UpdatePanel1">
+             <ProgressTemplate>
+                <div class="modal">
+                    <div class="center">
+                        <img alt="" src="loader.gif" />
+                    </div>
+                </div>
+            </ProgressTemplate>
+        </asp:UpdateProgress>--%>
+         <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+         <ContentTemplate>
+             <div class="mainHeaderContainer">
+                  <div id="header">
+                    <div id="logo">
+                      <h1><a href="default.aspx">Media Manager</a></h1><p>Beta version 0.1</p>
+                    </div>
+                    <ul id="topnav">
+                      <li class="last"><a href="#">Others</a></li>
+                      <li><a href="GamesData.aspx">Games</a></li>
+                      <li><a href="AnimeData.aspx">Anime Series</a></li>
+                      <li><a href="TVData.aspx">TV Series</a></li>
+                      <li><a href="MoviesData.aspx">Movies</a></li>
+                      <li ><a href="default.aspx">Home</a></li>
+                    </ul>
+                    <br class="clear" />
+                  </div>
+              </div>
+            <div class="mainInnerContainer">
+                <div id="container">
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                    
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <div class="footerContainer">
+                <div id="footer">
+                    <ul>
+                        <li><a href="MoviesData.aspx">Movies</a></li>
+                        <li><a href="TVData.aspx">TV Series</a></li>
+                        <li><a href="AnimeData.aspx">Anime Series</a></li>
+                        <li><a href="GamesData.aspx">Games</a></li>
+                        <li class="last"><a  href="#">Others</a></li>
+                    </ul>
+                </div>
+            </div>
+        </ContentTemplate>
+        </asp:UpdatePanel>
+  </form>
+</body>
+</html>

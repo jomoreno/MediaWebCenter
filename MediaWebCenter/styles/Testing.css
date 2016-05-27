@@ -1,0 +1,15 @@
+﻿body {
+}
+
+.cn {
+  display: flex;
+  justify-content: center;
+  height:50px;
+  border:1px solid red;
+  width:200px;
+}
+
+.inner {
+  align-self: center;
+  border:1px solid green;
+}

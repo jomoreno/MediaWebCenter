@@ -1,0 +1,92 @@
+﻿body {
+
+    font:bold 12px arial; 
+    background-color:black;
+}
+
+h2 {
+
+    color:darkgray;
+    font-style:italic;
+
+}
+
+td {
+
+    text-align:center;
+    min-height:30px;
+
+}
+
+tr {
+
+    border:1px solid Transparent;
+
+}
+
+table {
+
+    width: 763px; 
+    height: 480px;
+    border:1px solid Transparent;
+
+}
+
+.loginButton {
+
+    height:32px;
+    width:32px;
+    top:50%;
+    transform:translateY(-50%);
+    position:relative;
+
+}
+
+.label {
+    top:30%;
+    transform:translateY(-50%);
+    position:relative;
+    color:lightslategray;
+}
+
+.textbox {
+
+    top:50%;
+    transform:translateY(-50%);
+    position:relative;
+
+}
+
+
+.divContainer {
+
+    border:1px solid Transparent;
+    height:auto;
+    width:70%;
+    left:15%;
+    position:relative;
+    overflow:auto;
+    
+}
+
+
+.divInnerContainer {
+    width:230px;
+    height:50px;
+    position:relative;
+    vertical-align:central;
+    padding-right:5px;
+    border:1px solid Transparent;
+    float:left;
+}
+
+.divInnerContainerButton {
+
+    width:50px;
+    height:50px;
+    position:relative;
+    float:left;
+    border:1px solid Transparent;
+
+}
+
